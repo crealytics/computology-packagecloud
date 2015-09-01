@@ -22,7 +22,7 @@ class packagecloud() {
     case $::operatingsystem {
       'debian',
       'ubuntu': {
-        ensure_packages('apt-transport-https', {"ensure" => "latest"})
+        ensure_packages('apt-transport-https')
       }
       'RedHat',
       'redhat',
